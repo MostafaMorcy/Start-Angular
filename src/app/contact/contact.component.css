@@ -1,0 +1,39 @@
+.border-bottom {
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid rgb(224, 224, 224) !important;
+  }
+  button {
+    width: 100px;
+    height: 75px;
+    background-color: #1bbc9b;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #19a589 !important ;
+    color: white;
+  }
+  
+.lines {
+    position: relative;
+    color: #2d3e50 !important;
+  }
+  .lines::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 53%;
+    height: 4px;
+    width: 100px;
+    background-color:#2d3e50;
+  }
+  .lines::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 53%;
+    height: 4px;
+    width: 100px;
+    background-color:#2d3e50;
+  }

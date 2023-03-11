@@ -1,0 +1,72 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12  text-center mt-5 fw-bolder fs-1 size">
+                <div class="portfolio-header">
+                    <h1>PORTFOLIO</h1>
+                    <div class="content-under-header position-relative mt-3">
+                        <p class="lines">
+                          <i class="fa-solid fa-star"></i>
+                        </p>
+                      </div>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-12 col-md-6 col-lg-4" *ngFor="let imgSrc of imagesList">
+                  <div
+                    class="portfolio-card overflow-hidden rounded-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    (click)="getImgSrc($event)"
+                  >
+                    <div class="portfolio-image">
+                      <img src="{{ imgSrc }}" alt="" class="w-100" />
+                    </div>
+                    <div
+                      class="overlay d-flex justify-content-center align-items-center text-white fa-5x"
+                    >
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <i
+                        class="fa-solid fa-xmark float-end fa-3x"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></i>
+                      <div class="text-container text-center">
+                        <img class="w-75 rounded-3 my-3" [src]="clickedImageSrc" alt="" />
+                        <p class="w-75 m-auto p-3">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                          neque assumenda ipsam nihil, molestias magnam, recusandae quos quis
+                          inventore quisquam velit asperiores, vitae? Reprehenderit soluta,
+                          eos quod consequuntur itaque. Nam.
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          <i class="fa-solid fa-xmark text-white"></i> Close Window
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+    </div>
+</section>

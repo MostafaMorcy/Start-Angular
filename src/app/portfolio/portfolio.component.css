@@ -1,0 +1,66 @@
+
+.size{
+    font-size: 4rem !important;
+    line-height: 3.5rem !important;
+    text-transform: uppercase !important;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700 !important;
+
+}
+.lines {
+    position: relative;
+    color: #2d3e50 !important;
+  }
+  .lines::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 53%;
+    height: 4px;
+    width: 100px;
+    background-color:#2d3e50;
+  }
+  .lines::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 53%;
+    height: 4px;
+    width: 100px;
+    background-color:#2d3e50;
+  }
+  .portfolio-card {
+    position: relative;
+    cursor: pointer;
+  }
+  .portfolio-card:hover .overlay {
+    opacity: 80%;
+  }
+  .overlay {
+    position: absolute;
+    background-color: #1bbc9b;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  button {
+    background-color: #1bbc9b;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #19a589 !important ;
+    color: white;
+  }
+  
+  .modal {
+    --bs-modal-width: 800px !important;
+  }
+  .fa-xmark {
+    color: #19a589;
+    cursor: pointer;
+  }
+  
